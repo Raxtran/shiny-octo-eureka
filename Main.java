@@ -10,6 +10,7 @@ public class Main {
         String frase = at.nextLine();
 
         int counter = 0;
+        int o = 0;
 
         for (int i = 0; i < frase.length(); i++) {
 
@@ -18,11 +19,12 @@ public class Main {
             if(pt == 'a' || pt == 'e' || pt == 'i' || pt == 'o' || pt =='u'){
                 counter++;
             }
+            if (pt == 'o'){o++;}
 
 
         }
 
-        System.out.println("Tiene "+ counter +" vocales");
+        System.out.println("Tiene "+ counter +" vocales y tiene "+ o +" os");
 
 
 
